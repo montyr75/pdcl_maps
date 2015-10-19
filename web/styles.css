@@ -10,6 +10,4 @@ body {
   user-select: none;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-touch-callout: none;
-  height: 100%;
-  margin: 0;
 }
