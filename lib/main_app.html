@@ -1,37 +1,37 @@
 <dom-module id="main-app">
-  <style>
-    :host {
-      display: block;
-    }
-
-    paper-card {
-      position: absolute;
-      bottom: 25px;
-      left: 25px;
-      z-index: 1;
-      width: 490px;
-    }
-
-    paper-tabs {
-      --paper-tabs-selection-bar-color: #0D47A1;
-      margin-top: 16px;
-    }
-
-    paper-tab {
-      --paper-tab-ink: #BBDEFB;
-    }
-
-    paper-tab iron-icon {
-      margin-right: 10px;
-    }
-
-    paper-tab.iron-selected {
-      background: rgb(66, 133, 244);
-      color: white;
-    }
-  </style>
-
   <template>
+    <style>
+      :host {
+        display: block;
+      }
+
+      paper-card {
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+        z-index: 1;
+        width: 490px;
+      }
+
+      paper-tabs {
+        --paper-tabs-selection-bar-color: #0D47A1;
+        margin-top: 16px;
+      }
+
+      paper-tab {
+        --paper-tab-ink: #BBDEFB;
+      }
+
+      paper-tab iron-icon {
+        margin-right: 10px;
+      }
+
+      paper-tab.iron-selected {
+        background: rgb(66, 133, 244);
+        color: white;
+      }
+    </style>
+
     <google-map id="g-map" latitude="40.2735697" longitude="-111.7154958" zoom="13" disable-default-ui libraries="places" map="{{map}}">
       <google-map-marker latitude="40.2735697" longitude="-111.7154958" title="GDG Utah Dart Meetup&#13;Orem, Utah&#13;USA" draggable="true"></google-map-marker>
     </google-map>
