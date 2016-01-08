@@ -1,6 +1,6 @@
 name: 'pdcl_maps'
-version: 0.0.1
-description: A web app built using polymer.dart.
+version: 0.0.2
+description: A web app built using Polymer Dart.
 author: Monty Rasmussen
 homepage: https://dart.academy
 
@@ -9,16 +9,14 @@ environment:
 
 dependencies:
   browser: ^0.10.0
-  polymer_elements: ^1.0.0-rc.5
-  polymer: ^1.0.0-rc.9
-  reflectable: ^0.4.0
+  polymer: ^1.0.0-rc.12
   web_components: ^0.12.0
+  polymer_elements: ^1.0.0-rc.5
 
 transformers:
-- web_components:
-    entry_points: web/index.html
-- reflectable:
-    entry_points: web/index.dart
+- polymer:
+    entry_points:
+      - web/index.html
 - $dart2js:
     $include: '**/*.bootstrap.initialize.dart'
     minify: true
